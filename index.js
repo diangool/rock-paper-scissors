@@ -1,6 +1,13 @@
-function getComputerChoice(Rock, Paper, Scissors) {
-    const options = ['Rock', 'Paper', 'Scissors'];
-    const choice = options[Math.floor(Math.random() * options.length)];
-    return choice;
+function computerSelection() {
+  const options = ["rock", "paper", "scissors"];
+  const choice = options[Math.floor(Math.random() * options.length)];
+  return choice;
 }
-console.log(getComputerChoice());
+function getHumanChoice() {
+  const userInput = window.prompt(
+    "Please enter your choice:",
+    "rock,paper,scissors"
+  );
+  return userInput;
+}
+console.log(getHumanChoice());
